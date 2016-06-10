@@ -1,14 +1,18 @@
-const styles = require('./styles');
-const React = require('react-native');
-const { Dimensions, Animated, } = React;
-const deviceScreen = Dimensions.get('window');
+import React, {
+  Component,
+} from 'react';
 
-const {
+import {
+  Animated,
+  Dimensions,
   PanResponder,
   View,
   TouchableWithoutFeedback,
-  Component,
-} = React;
+} from 'react-native';
+
+import styles from './styles';
+
+const deviceScreen = Dimensions.get('window');
 
 /**
  * Size of the amount you can move content view in the opened menu state and
@@ -264,4 +268,4 @@ SideMenu.defaultProps = {
   bounceBackOnOverdraw: true,
 };
 
-module.exports = SideMenu;
+export default SideMenu;

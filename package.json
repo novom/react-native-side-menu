@@ -16,8 +16,8 @@
     "ios",
     "sidebar"
   ],
-  "devDependencies": {
-    "react-native": "^0.17.0"
+  "peerDependencies": {
+    "react-native": "*"
   },
   "author": "Alexey Kureev <kureev-mail@ya.ru> (https://github.com/Kureev)",
   "license": "MIT",
